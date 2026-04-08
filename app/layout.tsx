@@ -1,0 +1,105 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono,  } from "next/font/google";
+import "./globals.css";
+import localFont from 'next/font/local'
+
+const satoshi = localFont({
+  src:[
+    {
+      path: './fonts/Satoshi-Regular.otf'
+    },
+    {
+      path: './fonts/Satoshi-Black.otf'
+    },
+    // {
+    //   path: './fonts/Satoshi-BlackItalic.otf'
+    // },
+    {
+      path: './fonts/Satoshi-Bold.otf'
+    },
+    // {
+    //   path: './fonts/Satoshi-BoldItalic.otf'
+    // },
+    // {
+    //   path: './fonts/Satoshi-Italic.otf'
+    // },
+    {
+      path: './fonts/Satoshi-Light.otf'
+    },
+    // {
+    //   path: './fonts/Satoshi-LightItalic.otf'
+    // },
+    {
+      path: './fonts/Satoshi-Medium.otf'
+    },
+    // {
+    //   path: './fonts/Satoshi-MediumItalic.otf'
+    // },
+  ]
+})
+
+const generalSans = localFont({
+  src:[
+    {
+      path: './fonts/GeneralSans-Regular.woff2'
+    },
+    // {
+    //   path: './fonts/GeneralSans-Black.woff2'
+    // },
+    // {
+    //   path: './fonts/GeneralSans-BlackItalic.woff2'
+    // },
+    {
+      path: './fonts/GeneralSans-Bold.woff2'
+    },
+    // {
+    //   path: './fonts/GeneralSans-BoldItalic.woff2'
+    // },
+    // {
+    //   path: './fonts/GeneralSans-Italic.woff2'
+    // },
+    {
+      path: './fonts/GeneralSans-Light.woff2'
+    },
+    // {
+    //   path: './fonts/GeneralSans-LightItalic.woff2'
+    // },
+    {
+      path: './fonts/GeneralSans-Medium.woff2'
+    },
+    // {
+    //   path: './fonts/GeneralSans-MediumItalic.woff2'
+    // },
+  ],
+  variable: "--font-general-sans"
+})
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Seep: A tech innovation",
+  description: "Seep: A tech innovation",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${satoshi.className} ${generalSans.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-[#FAFBFC]">{children}</body>
+    </html>
+  );
+}

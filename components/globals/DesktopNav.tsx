@@ -1,0 +1,48 @@
+"use client"
+import useNavigation from '@/hooks/useNavigation'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import { Button } from '../ui/button'
+import { ArrowRight } from 'lucide-react'
+
+const DesktopNav = () => {
+    const links = useNavigation()
+  return (
+    <section className='flex justify-center items-center'>
+        <div className='bg-white p-2 w-full max-w-249 mx-auto flex justify-between items-center absolute top-4 rounded-full'>
+            <figure className='bg-neutral-100 px-3 py-5 rounded-full'>
+                <Image src={`/logo.png`} width={500} height={500} alt='' className='w-10 h-4' />
+                <figcaption className='sr-only'>Logo</figcaption>
+            </figure>
+            <div className='flex gap-6'>
+                {links.map((link) => (
+                    <Link key={link.name} href={link.href}>
+                        {link.name}
+                    </Link>
+                ))}
+            </div>
+            <div className='flex items-center gap-2'>
+                <Link href={``}>
+                    <Button variant={`outline`} className='min-h-12 cursor-pointer bg-neutral-50 border border-solid rounded-full'>
+                        <span className="bg-blue-700 p-2 rounded-full text-white">
+                            <ArrowRight />
+                        </span>
+                        <span>Contact</span>
+
+                    </Button>
+                </Link>
+                <Link href={``}>
+                    <Button className='bg-seep-primary min-h-12 cursor-pointer rounded-full px-6'>
+                        Donate
+                    </Button>
+                </Link>
+            </div>
+            
+        </div>
+
+    </section>
+  )
+}
+
+export default DesktopNav
