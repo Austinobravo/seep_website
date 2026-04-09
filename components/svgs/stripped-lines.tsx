@@ -4,7 +4,7 @@ import { IconProps } from './types'
 const StrippedLines = ({className, ...props}: IconProps) => {
     return (
         <svg className={className} {...props} width="200" height="129" viewBox="0 0 200 129" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_767_5694)">
+        <g clipPath="url(#clip0_767_5694)">
         <mask id="path-1-inside-1_767_5694" fill="white">
         <path d="M0 4C0 1.79086 1.79086 0 4 0H200V129H4C1.79086 129 0 127.209 0 125V4Z"/>
         </mask>
