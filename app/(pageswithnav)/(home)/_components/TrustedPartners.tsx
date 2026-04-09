@@ -1,6 +1,8 @@
 import { StrippedLines } from '@/components/svgs'
 import React from 'react'
 import { ArrowUpRight } from "lucide-react"
+
+import Image from "next/image"
 const items = [
     {
         logo: "/trustedPartner1.png",
