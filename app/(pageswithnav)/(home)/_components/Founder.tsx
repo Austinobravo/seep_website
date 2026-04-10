@@ -21,9 +21,9 @@ const Founder = () => {
     }
   return (
     <div className='bg-neutral-900 py-20'>
-        <div className="mx-auto max-w-360 lg:px-20 px-10 flex flex-col lg:flex-row gap-10">
+        <div className="mx-auto max-w-360 lg:px-20 px-10 flex flex-col-reverse lg:flex-row gap-10">
             <div className='lg:basis-1/2 space-y-10'>
-                <h3 className='text-neutral-50 text-3xl font-medium mb-6 max-w-4/5'>
+                <h3 className='text-neutral-50 text-3xl font-medium mb-6 lg:max-w-4/5'>
                     SEE Support founder and CEO Bright Ohakam
                 </h3>
                 

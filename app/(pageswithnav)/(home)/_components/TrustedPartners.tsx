@@ -48,11 +48,11 @@ const items = [
 const TrustedPartners = () => {
   return (
     <section className="bg-linear-to-b from-[#DFE5E9] via-[#C3CDE2] to-[#6D7586]">
-        <div className='mx-auto max-w-360 py-10'>
-            <h2 className='text-center text-2xl font-medium py-4'>Trusted by 3+ Partners</h2>
+        <div className='mx-auto max-w-360 py-10 lg:px-20 px-5'>
+            <h2 className='text-center lg:text-2xl font-medium py-4'>Trusted by 3+ Partners</h2>
             <div className='flex justify-center items-center'>
-                <StrippedLines />
-                <div className='grid lg:grid-cols-4 divide-x divide-y divide-neutral-200 border-t border-l border-neutral-200 '>
+                <StrippedLines className='hidden lg:block'/>
+                <div className='grid lg:grid-cols-4 grid-cols-3 divide-x divide-y divide-neutral-200 border-t border-l border-neutral-200 '>
                     {items.map((item, index) => (
                         <div title={item.title} key={index} className="max-w-40 max-h-60 py-2 bg-neutral-50 flex flex-col justify-center items-center border-r border-b border-neutral-200">
                             {item.logo !== "" ?
@@ -68,7 +68,7 @@ const TrustedPartners = () => {
                         </div>
                     ))}
                 </div>
-                <StrippedLines />
+                <StrippedLines className='hidden lg:block'/>
             </div>
         </div>
     </section>

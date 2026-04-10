@@ -35,7 +35,7 @@ const faqsItems = [
 
 const Faqs = () => {
     return (
-        <section className='max-w-7xl mx-auto flex py-20 flex-col lg:flex-row lg:px-20 px-10 gap-10'>
+        <section className='max-w-7xl mx-auto flex py-20 flex-col lg:flex-row lg:px-20 px-5 gap-10'>
             <h2 className='text-3xl font-medium lg:basis-1/2'>FAQS</h2>
             
             <div className='lg:basis-1/2 w-full'>

@@ -111,7 +111,7 @@ const socials = [
 const Footer = () => {
   return (
     <section className='bg-linear-to-r from-[#003F89] via-[#01050D] to-[#000000] w-full  z-10 relative'>
-      <footer className='flex flex-col justify-between not-lg:gap-y-10 lg:px-20 px-10 py-7 max-w-360 mx-auto  min-h-110 '>
+      <footer className='flex flex-col justify-between not-lg:gap-y-10 lg:px-20 px-5 py-7 max-w-360 mx-auto  min-h-110 '>
           <FooterStars className='absolute left-0  -z-10 not-lg:max-w-75'/>
         <div className='flex not-lg:flex-col pt-10 gap-y-3'>
           <div className='lg:basis-4/12'>

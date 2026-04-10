@@ -7,14 +7,14 @@ import Link from 'next/link'
 
 const HomeHero = () => {
   return (
-    <section className='flex gap-2 not-lg:flex-col max-w-360 mx-auto lg:px-20 px-10 max-h-120'>
+    <section className='flex gap-2 not-lg:flex-col gap-y-10 max-w-360 mx-auto lg:px-20 px-5 lg:max-h-120 max-h-187'>
         <div className='lg:basis-2/5 my-auto h-fit space-y-6'>
-            <h1 className="lg:text-4xl font-general-sans">Social Entrepreneurial Enhancement <span className='text-neutral-400'>Support Center (SEE-SC)</span></h1>
+            <h1 className="lg:text-4xl text-2xl font-general-sans">Social Entrepreneurial Enhancement <span className='text-neutral-400'>Support Center (SEE-SC)</span></h1>
             <h2 className="text-neutral-600">Creating a network of business opportunities and ideas, for a sustainable global economy.</h2>
-            <div className='flex gap-x-4 items-center'>
-                <LinkButton title='Learn more' icon={ArrowRight} path='' />
+            <div className='flex gap-x-4 not-lg:flex-col gap-y-4 items-center'>
+                <LinkButton title='Learn more' icon={ArrowRight} path='' className='py-10'/>
                 <Link href={``}>
-                    <Button className="bg-[#476CFF1A] text-seep-primary py-6! px-10 hover:scale-105 transition-all duration-700 cursor-pointer rounded-full hover:bg-[#476CFF1A]/80">Donate</Button>
+                    <Button className="bg-[#476CFF1A] text-seep-primary py-6! w-40 hover:scale-105 transition-all duration-700 cursor-pointer rounded-full hover:bg-[#476CFF1A]/80">Donate</Button>
                 </Link>
             </div>
         </div>
