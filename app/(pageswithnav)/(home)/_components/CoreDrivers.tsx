@@ -17,7 +17,7 @@ const CoreDrivers = () => {
   return (
     <section className="bg-linear-to-b from-[#F4F6F6] via-[#E9F0F4] to-[#DFE5E9]">
       <div className="max-w-360 mx-auto py-10">
-        <h2 className='text-center'>Our Core Drivers</h2>
+        <h2 className='text-center lg:text-4xl font-medium'>Our Core Drivers</h2>
         <Tabs defaultValue="overview" className="w-[400px] mx-auto">
           <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>

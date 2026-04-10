@@ -50,7 +50,7 @@ const TrustedPartners = () => {
 
                             </div>
                             :
-                            <Image src={`/partnerComingSoon.png`} width={500} height={500} alt="Logo" />
+                            <Image src={`/partnerComingSoon.png`} width={500} height={500} alt="Logo"  className='cursor-not-allowed pointer-events-auto!'/>
                             }
 
                         </div>

@@ -134,8 +134,8 @@
 
 @theme {
   
-  --animate-marquee-vertical: marquee-vertical 20s linear infinite;
-  --animate-marquee-down: marquee-vertical-reverse 20s linear infinite;
+  --animate-marquee-vertical: marquee-vertical 50s linear infinite;
+  --animate-marquee-down: marquee-vertical-reverse 50s linear infinite;
   --animate-marquee: marquee 90s linear infinite;
   
   @keyframes marquee {
