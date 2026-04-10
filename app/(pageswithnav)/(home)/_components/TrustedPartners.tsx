@@ -39,6 +39,11 @@ const items = [
         link: "",
         title: "Coming Soon"
     },
+    {
+        logo: "",
+        link: "",
+        title: "Coming Soon"
+    },
 ]
 const TrustedPartners = () => {
   return (
