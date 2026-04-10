@@ -12,74 +12,39 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
+import Image from 'next/image'
+import CoreDriversCard from './CoreDriversCard'
 
 const CoreDrivers = () => {
   return (
     <section className="bg-linear-to-b from-[#F4F6F6] via-[#E9F0F4] to-[#DFE5E9]">
-      <div className="max-w-360 mx-auto py-10">
+      <div className="max-w-360 mx-auto py-10 space-y-7">
         <h2 className='text-center lg:text-4xl font-medium'>Our Core Drivers</h2>
-        <Tabs defaultValue="overview" className="w-[400px] mx-auto">
-          <TabsList>
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="analytics">Analytics</TabsTrigger>
-            <TabsTrigger value="reports">Reports</TabsTrigger>
-            <TabsTrigger value="settings">Settings</TabsTrigger>
+        <Tabs defaultValue="research" className="2xl:min-w-260 lg:w-200 mx-auto border bg-neutral-50 shadow rounded-2xl p-4">
+          <TabsList className='bg-neutral-100! mx-auto space-x-10 min-h-15 px-4 py-2 lg:w-190'>
+            <TabsTrigger value="research" className='data-active:bg-neutral-50 cursor-pointer data-active:py-4 data-active:px-4 rounded font-medium text-neutral-400 data-active:text-seep-primary!'>Research</TabsTrigger>
+            <TabsTrigger value="innovation" className='data-active:bg-neutral-50 cursor-pointer data-active:py-4 data-active:px-4 rounded font-medium text-neutral-400 data-active:text-seep-primary!'>Innovation</TabsTrigger>
+            <TabsTrigger value="empowerment" className='data-active:bg-neutral-50 cursor-pointer data-active:py-4 data-active:px-4 rounded font-medium text-neutral-400 data-active:text-seep-primary!'>Empowerment</TabsTrigger>
+            <TabsTrigger value="science" className='data-active:bg-neutral-50 cursor-pointer data-active:py-4 data-active:px-4 rounded font-medium text-neutral-400 data-active:text-seep-primary!'>Science</TabsTrigger>
+            <TabsTrigger value="technology" className='data-active:bg-neutral-50 cursor-pointer data-active:py-4 data-active:px-4 rounded font-medium text-neutral-400 data-active:text-seep-primary!'>Technology</TabsTrigger>
           </TabsList>
-          <TabsContent value="overview">
-            <Card>
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-                <CardDescription>
-                  View your key metrics and recent project activity. Track progress
-                  across all your active projects.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                You have 12 active projects and 3 pending tasks.
-              </CardContent>
-            </Card>
+          <TabsContent value="research" className=''>
+            <CoreDriversCard heading='Research' paragraph='We drive evidence-based research to understand real community challenges and uncover practical solutions. Our studies focus on education, social development, and sustainable growth. By gathering reliable data and local insights, we ensure every program is informed, measurable, and impactful.' image='/research.jpg'/>
           </TabsContent>
-          <TabsContent value="analytics">
-            <Card>
-              <CardHeader>
-                <CardTitle>Analytics</CardTitle>
-                <CardDescription>
-                  Track performance and user engagement metrics. Monitor trends and
-                  identify growth opportunities.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                Page views are up 25% compared to last month.
-              </CardContent>
-            </Card>
+          <TabsContent value="innovation">
+            <CoreDriversCard heading='Innovation' paragraph='We design innovative approaches that respond to evolving social and educational needs. Through creative problem-solving and collaborative thinking, we develop scalable solutions that improve access and opportunity. Innovation allows us to adapt quickly and deliver smarter, more effective programs.' image='/innovation.jpg'/>
+            
           </TabsContent>
-          <TabsContent value="reports">
-            <Card>
-              <CardHeader>
-                <CardTitle>Reports</CardTitle>
-                <CardDescription>
-                  Generate and download your detailed reports. Export data in
-                  multiple formats for analysis.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                You have 5 reports ready and available to export.
-              </CardContent>
-            </Card>
+          <TabsContent value="empowerment">
+            <CoreDriversCard heading='Empowerment' paragraph='We empower individuals and communities with the skills, knowledge, and resources they need to thrive. Our programs build confidence, leadership, and long-term capacity. By investing in people, we create sustainable change that continues beyond our direct involvement.' image='/empowerment.jpg'/>
           </TabsContent>
-          <TabsContent value="settings">
-            <Card>
-              <CardHeader>
-                <CardTitle>Settings</CardTitle>
-                <CardDescription>
-                  Manage your account preferences and options. Customize your
-                  experience to fit your needs.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                Configure notifications, security, and themes.
-              </CardContent>
-            </Card>
+          <TabsContent value="science">
+            <CoreDriversCard heading='Science' paragraph='We leverage science and technology to enhance learning, expand access, and improve program delivery. Digital tools and data systems enable greater efficiency, transparency, and impact measurement. By integrating technology responsibly, we prepare communities for a rapidly advancing world.' image='/science.jpg'/>
+            
+          </TabsContent>
+          <TabsContent value="technology">
+            <CoreDriversCard heading='Technology' paragraph='We leverage science and technology to enhance learning, expand access, and improve program delivery. Digital tools and data systems enable greater efficiency, transparency, and impact measurement. By integrating technology responsibly, we prepare communities for a rapidly advancing world.' image='/technology.jpg'/>
+            
           </TabsContent>
         </Tabs>
 
