@@ -19,14 +19,14 @@ const DesktopNav = () => {
             </figure>
             </Link>
             <div className='flex gap-6'>
-                {links.map((link) => (
+                {links.filter(link => link.name !== "Contact Us" && link.name !== "Donate").map((link) => (
                     <Link key={link.name} href={link.href} className='hover:font-bold transition duration-300'>
                         {link.name}
                     </Link>
                 ))}
             </div>
             <div className='flex items-center gap-2'>
-                <Link href={``}>
+                <Link href={`/contact`}>
                     <Button variant={`outline`} className='min-h-12 group cursor-pointer bg-neutral-50 border border-solid rounded-full'>
                         <span className="bg-blue-700 p-2 rounded-full text-white">
                             <ArrowRight  className='group-hover:translate-x-2 transition duration-500'/>
@@ -40,7 +40,7 @@ const DesktopNav = () => {
                         Donate
                     </Button>
                 </Link> */}
-                <LinkButton title='Donate' path='' />
+                <LinkButton title='Donate' path='/donate' />
 
             </div>
             

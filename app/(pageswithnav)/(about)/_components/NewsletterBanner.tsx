@@ -1,3 +1,5 @@
+"use client"
+
 export default function NewsletterBanner() {
   return (
     <section className="py-20 bg-[#335CFF]">

@@ -26,7 +26,16 @@ const useNavigation = () => {
             href: "/blog",
             active: pathname.startsWith("/blog")
         },
-        
+        {
+            name: "Contact Us",
+            href: "/contact",
+            active: pathname === "/contact"
+        },
+        {
+            name: "Donate",
+            href: "/donate",
+            active: pathname === "/donate"
+        },
     ], [pathname])
 
     return navLinks
