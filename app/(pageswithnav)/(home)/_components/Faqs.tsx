@@ -44,7 +44,7 @@ const Faqs = () => {
                         <AccordionItem 
                             key={index} 
                             value={`item-${index}`} 
-                            className='max-w-[556px] shadow-sm border border-solid border-[#E1E4EA] rounded-2xl px-4 py-1'
+                            className='lg:max-w-[556px] shadow-sm border border-solid border-[#E1E4EA] rounded-2xl px-4 py-1'
                         >
                             <AccordionTrigger isPlus={true} className='text-sm cursor-pointer  font-medium hover:no-underline'>
                                 {faq.question}

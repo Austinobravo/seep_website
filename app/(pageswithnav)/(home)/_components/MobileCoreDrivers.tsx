@@ -41,9 +41,9 @@ const MobileCoreDrivers = () => {
                 <AccordionItem
                     key={index}
                     value={`item-${index}`}
-                    className='max-w-full shadow-sm border border-solid border-[#E1E4EA] bg-neutral-50 rounded-2xl px-4 py-1'
+                    className='max-w-full shadow-sm  bg-neutral-50 rounded-2xl px-4 py-1'
                 >
-                    <AccordionTrigger isPlus={true} className='cursor-pointer text-2xl font-medium hover:no-underline'>
+                    <AccordionTrigger isPlus={true} className='cursor-pointer text-2xl font-medium hover:no-underline text-neutral-700'>
                         {driver.title}
                     </AccordionTrigger>
                     <AccordionContent className='text-[#525866] text-sm leading-relaxed space-y-4'>

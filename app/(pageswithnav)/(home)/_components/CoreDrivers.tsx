@@ -18,9 +18,9 @@ import MobileCoreDrivers from './MobileCoreDrivers'
 
 const CoreDrivers = () => {
   return (
-    <section className="bg-linear-to-b from-[#F4F6F6] via-[#E9F0F4] to-[#DFE5E9]">
+    <section className="lg:bg-linear-to-b from-[#F4F6F6] via-[#E9F0F4] to-[#DFE5E9]">
       <div className="max-w-360 mx-auto py-10 lg:px-20 px-5 space-y-7">
-        <h2 className='lg:text-center lg:text-4xl text-2xl font-medium'>Our Core Drivers</h2>
+        <h2 className='lg:text-center lg:text-4xl text-2xl font-medium text-neutral-700'>Our Core Drivers</h2>
         <div className='lg:block hidden'>
           <Tabs defaultValue="research" className="2xl:min-w-260 lg:w-200 mx-auto border bg-neutral-50 shadow rounded-2xl p-4">
             <TabsList className='bg-neutral-100! mx-auto space-x-10 min-h-15 px-4 py-2 lg:w-190'>

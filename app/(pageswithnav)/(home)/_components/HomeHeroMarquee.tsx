@@ -31,44 +31,36 @@ const HomeHeroMarquee = () => {
   return (
 
     <>
-    <div className="flex">
-    <div className="relative h-178 overflow-hidden">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-18 bg-linear-to-b from-gray-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-58 h-18 bg-linear-to-t from-gray-50 to-transparent" />
-      {/* The Track: Holds two copies and animates vertically */}
-      <div className="flex flex-col animate-marquee-vertical hover:paused gap-(--gap) p-4">
-        <FirstList />
-        <FirstList aria-hidden="true" />
+     <div className="relative h-full w-full overflow-hidden">
+      {/* Global Gradient Fades - Placed outside the scrolling containers */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-gray-50 via-gray-50/50 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-gray-50 via-gray-50/50 to-transparent" />
+
+      <div className="flex h-full">
+        {/* Column 1 */}
+        <div className="relative flex-1 overflow-hidden">
+          <div className="flex flex-col animate-marquee-vertical hover:paused gap-(--gap) p-2 lg:p-4">
+            <FirstList />
+            <FirstList aria-hidden="true" />
+          </div>
+        </div>
+
+        {/* Column 2 */}
+        <div className="relative flex-1 overflow-hidden">
+          <div className="flex flex-col animate-marquee-down hover:paused gap-(--gap) p-2 lg:p-4">
+            <SecondList />
+            <SecondList aria-hidden="true" />
+          </div>
+        </div>
+
+        {/* Column 3 */}
+        <div className="relative flex-1 overflow-hidden">
+          <div className="flex flex-col animate-marquee-vertical hover:paused gap-(--gap) p-2 lg:p-4">
+            <ThirdList />
+            <ThirdList aria-hidden="true" />
+          </div>
+        </div>
       </div>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-18 bg-linear-to-b from-gray-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-58 h-18 bg-linear-to-t from-gray-50 to-transparent" />
-      
-      {/* Optional: Gradient Fades (Top and Bottom) */}
-    </div>
-    <div className="relative h-178 overflow-hidden">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-18 bg-linear-to-b from-gray-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-58 h-18 bg-linear-to-t from-gray-50 to-transparent" />
-      {/* Apply the new downward animation class */}
-      <div className="flex flex-col animate-marquee-down gap-(--gap) hover:paused p-4">
-        <SecondList />
-        <SecondList aria-hidden="true" />
-      </div>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-18 bg-linear-to-b from-gray-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-58 h-18 bg-linear-to-t from-gray-50 to-transparent" />
-    </div>
-    <div className="relative h-178 overflow-hidden">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-18 bg-linear-to-b from-gray-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-58 h-18 bg-linear-to-t from-gray-50 to-transparent" />
-      {/* The Track: Holds two copies and animates vertically */}
-      <div className="flex flex-col animate-marquee-vertical hover:paused gap-(--gap) p-4">
-        <ThirdList />
-        <ThirdList aria-hidden="true" />
-      </div>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-18 bg-linear-to-b from-gray-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-58 h-18 bg-linear-to-t from-gray-50 to-transparent" />
-      
-      {/* Optional: Gradient Fades (Top and Bottom) */}
-    </div>
     </div>
 
     </>

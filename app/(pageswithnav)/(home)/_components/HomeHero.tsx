@@ -7,10 +7,10 @@ import Link from 'next/link'
 
 const HomeHero = () => {
   return (
-    <section className='flex gap-2 not-lg:flex-col gap-y-10 max-w-360 mx-auto lg:px-20 px-5 lg:max-h-120 max-h-187'>
+    <section className='flex gap-2 not-lg:flex-col gap-y-10 max-w-360 mx-auto lg:px-20 px-5 lg:max-h-120 max-h-207'>
         <div className='lg:basis-2/5 my-auto h-fit space-y-6'>
-            <h1 className="lg:text-4xl text-2xl font-general-sans">Social Entrepreneurial Enhancement <span className='text-neutral-400'>Support Center (SEE-SC)</span></h1>
-            <h2 className="text-neutral-600">Creating a network of business opportunities and ideas, for a sustainable global economy.</h2>
+            <h1 className="lg:text-4xl text-3xl font-general-sans text-center">Social Entrepreneurial Enhancement <span className='text-neutral-400'>Support Center (SEE-SC)</span></h1>
+            <h2 className="text-neutral-600 text-center ">Creating a network of business opportunities and ideas, for a sustainable global economy.</h2>
             <div className='flex gap-x-4 not-lg:flex-col gap-y-4 items-center'>
                 <LinkButton title='Learn more' icon={ArrowRight} path='' className='py-10'/>
                 <Link href={``}>

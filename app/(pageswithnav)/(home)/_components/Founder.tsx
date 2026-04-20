@@ -21,10 +21,10 @@ const Founder = () => {
     }
   return (
     <div className='bg-neutral-900 py-20'>
-        <div className="mx-auto max-w-360 lg:px-20 px-10 flex flex-col-reverse lg:flex-row gap-10">
+        <div className="mx-auto max-w-360 lg:px-20 px-5 flex flex-col-reverse lg:flex-row gap-10">
             <div className='lg:basis-1/2 space-y-10'>
-                <h3 className='text-neutral-50 text-3xl font-medium mb-6 lg:max-w-4/5'>
-                    SEE Support founder and CEO Bright Ohakam
+                <h3 className='text-neutral-50 lg:text-3xl text-2xl font-medium mb-6 lg:max-w-4/5'>
+                    SEE-Support Centre founder and CEO Bright Ohakam
                 </h3>
                 
                 {/* Video Implementation */}
@@ -69,7 +69,7 @@ const Founder = () => {
                 <h3 className="text-blue-100 text-xs font-medium flex items-center">
                     <Dot className="text-blue-400" /> BIO
                 </h3>
-                <div className='text-lg lg:text-xl space-y-20 text-neutral-300 leading-relaxed'>
+                <div className='text-sm lg:text-xl space-y-20 text-neutral-300 leading-relaxed'>
                     <p>
                         As the founder of SEE-Support Centre, my journey began with a single observation: 
                         Africa’s greatest resource isn’t buried in the ground; it is rather found in the 
