@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
+import Link from "next/link"
 
 const categories = ["All", "SEEP", "Project 2", "Project 3", "Project 4", "Project 5"]
 
@@ -55,32 +56,34 @@ export default function ProjectFilterSection() {
         >
           <AnimatePresence mode='popLayout'>
             {filteredProjects.map((project) => (
-              <motion.div
-                key={project.id}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.4 }}
-                className="group relative h-[450px] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
-              >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                
-                {/* Overlay Badge */}
-                <div className="absolute top-6 left-6 px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900 shadow-md">
-                  {project.category}
-                </div>
+              <Link key={project.id} href={`/project/${project.id}`}>
+                <motion.div
+                  
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.4 }}
+                  className="group relative h-[450px] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  
+                  {/* Overlay Badge */}
+                  <div className="absolute top-6 left-6 px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900 shadow-md">
+                    {project.category}
+                  </div>
 
-                {/* Bottom Title Overlay (Optional but nice) */}
-                <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black/60 to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
-                  <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                </div>
-              </motion.div>
+                  {/* Bottom Title Overlay (Optional but nice) */}
+                  <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black/60 to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+                    <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </AnimatePresence>
         </motion.div>

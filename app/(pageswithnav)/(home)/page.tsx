@@ -5,6 +5,7 @@ import TrustedPartners from './_components/TrustedPartners'
 import Founder from './_components/Founder'
 import Faqs from './_components/Faqs'
 import Newsletter from './_components/Newsletter'
+import ChangingLivesSection from './_components/ChangingLives'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <CoreDrivers />
       <TrustedPartners />
       <Founder />
+      <ChangingLivesSection />
       <Faqs />
       <Newsletter />
     </section>
