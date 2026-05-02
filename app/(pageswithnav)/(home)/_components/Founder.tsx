@@ -31,10 +31,10 @@ const Founder = () => {
                 <div 
                  onMouseEnter={handlePlay}
                  onMouseLeave={handlePause}
-                className="group relative overflow-hidden rounded-2xl bg-black border border-neutral-800 cursor-pointer max-w-100.75 min-h-[369px]">
+                className="group relative overflow-hidden rounded-2xl bg-black border border-neutral-800 cursor-pointer lg:max-w-100.75 min-h-[369px]">
                     <video 
                         ref={videoRef}
-                        className="w-full h-auto max-w-100.75 min-h-[369px] aspect-video object-left object-cover transition-opacity duration-500"
+                        className="w-full h-auto lg:max-w-100.75 min-h-[369px] aspect-video object-left object-cover transition-opacity duration-500"
                         // controls
                         preload="metadata"
                         muted // Required for most browsers to allow autoplay on hover
