@@ -11,24 +11,27 @@ export default function DonatePage() {
   const [isModalOpen, setIsModalOpen] = useState(true) // Open by default for demo
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen -mt-28 ">
       {/* Hero Section */}
-      <section className="relative h-[600px] md:h-[700px] flex items-center overflow-hidden">
-        <Image 
-          src="/second3.jpg" 
-          alt="Donate Hero" 
-          fill 
-          className="object-cover brightness-[0.4]"
-          priority
-        />
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl animate-in fade-in slide-in-from-left-8 duration-1000">
-            <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tight leading-[0.9]">
-              DOUBLE <br />
-              <span className="italic font-light opacity-90 text-[0.8em]">your impact</span> <br />
-              for refugees
-            </h1>
+      <section className="relative ">
+        <div className="lg:h-[1000px] min-h-[403px] not-lg:pt-40 py-10  flex lg:items-center items-end not-lg:justify-end not-lg:flex-col bg-cover" style={{ "backgroundImage": `linear-gradient(to bottom, rgba(50, 50, 50, 0.5), rgba(100, 120, 110, 0.8)), url(/second3.jpg)`, "backgroundBlendMode": "multiply" }}>
+          {/* <Image 
+            src="/second3.jpg" 
+            alt="Donate Hero" 
+            fill 
+            className="object-cover brightness-[0.4]"
+            priority
+          /> */}
+          <div className="container mx-auto px-4 md:px-6 not-md:py-20 relative z-10">
+            <div className="max-w-3xl animate-in fade-in slide-in-from-left-8 duration-1000">
+              <h1 className="text-4xl lg:text-7xl font-bold text-white tracking-tight leading-[1.2] not-2xl:max-w-md">
+                DOUBLE <br />
+                <span className="italic font-light opacity-90">your impact for our programme beneficiaries</span>
+                
+              </h1>
+            </div>
           </div>
+
         </div>
         
         {/* Floating Modal Overlay - for this specific page, the modal is the focus */}
@@ -36,7 +39,7 @@ export default function DonatePage() {
       </section>
 
       {/* Information Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-linear-to-r from-[#FEFEFD] via-[#F6F4F1] to-[#F4F1E9]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
             <div className="space-y-6">

@@ -37,12 +37,26 @@ const MobileNav = () => {
 
   if (pathname.includes('/admin')) return null
 
+    const [isNavScrolling, setIsNavScrolling] = React.useState<boolean>(false)
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsNavScrolling(window.scrollY > 40)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
+    <nav className="fixed top-0 left-0 w-full z-55">
       {/* Header Bar */}
-      <div className="flex px-6 items-center justify-between py-4 bg-white border-b relative z-50">
+      <div className={`flex px-6 items-center justify-between py-4 ${pathname.includes("/donate") ? isNavScrolling ? "bg-white" : "bg-transparent": "bg-white border-b"} relative z-50`}>
         <Link href="/" onClick={() => setIsMenuToggled(false)}>
-          <div className="bg-neutral-100 p-2 rounded-full">
+          <div className="bg-neutral-100 px-2 py-6 rounded-full">
             <Image src="/logo.png" width={100} height={40} alt="Logo" className="w-auto h-6" />
           </div>
         </Link>

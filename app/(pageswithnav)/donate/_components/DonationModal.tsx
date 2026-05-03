@@ -19,7 +19,7 @@ const StepIndicator = ({ currentStep }: { currentStep: number }) => {
   ]
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2 mb-8 px-2 md:px-0">
+    <div className="flex not-md:flex-col lg:items-center justify-between gap-2 mb-8 px-2 md:px-0">
       {steps.map((step, index) => (
         <div key={step.id} className="flex items-center gap-2">
           <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold ${
@@ -92,12 +92,13 @@ export default function DonationModal({ isOpen, onClose }: { isOpen: boolean, on
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6 bg-black/40 backdrop-blur-sm">
+    // <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6 bg-black/40 backdrop-blur-sm">
+    <div className="z-51  p-4 md:p-6 lg:absolute 2xl:right-10 right-2 -bottom-20">
       <motion.div 
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-        className="bg-white w-full max-w-2xl rounded-[2.5rem] shadow-2xl overflow-hidden relative flex flex-col max-h-[90vh]"
+        className="bg-white w-full max-w-2xl md:rounded-[2.5rem] md:shadow-2xl overflow-hidden relative flex flex-col"
       >
         {/* Header */}
         <div className="p-8 pb-4 flex items-center justify-between">

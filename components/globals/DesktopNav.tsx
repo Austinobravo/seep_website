@@ -11,7 +11,7 @@ const DesktopNav = () => {
     const links = useNavigation()
   return (
     <section className='flex justify-center items-center'>
-        <div className='bg-white p-2 w-full max-w-249 mx-auto flex justify-between items-center absolute top-4 rounded-full'>
+        <div className='bg-white p-2 w-full max-w-249 mx-auto flex justify-between items-center absolute top-4 z-55 rounded-full'>
             <Link href="/">
             <figure className='bg-neutral-100 px-3 py-5 rounded-full'>
                 <Image src={`/logo.png`} width={500} height={500} alt='Logo' className='w-10 h-4' />
