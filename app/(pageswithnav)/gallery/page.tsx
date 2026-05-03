@@ -1,5 +1,6 @@
 import ProjectCardGrid from '@/components/gallery/ProjectCardGrid'
 import { galleryProjectCards } from '@/lib/gallery-data'
+import PressSection from '../blog/_components/PressSection'
 
 const GalleryPage = () => {
   return (
@@ -22,6 +23,7 @@ const GalleryPage = () => {
         </div>
 
         <ProjectCardGrid cards={galleryProjectCards} />
+        <PressSection />
       </div>
     </section>
   )
