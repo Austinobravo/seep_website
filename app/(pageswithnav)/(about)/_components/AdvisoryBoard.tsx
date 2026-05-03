@@ -6,7 +6,8 @@ import Link from "next/link"
 import React from "react"
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6"
 
-const advisors = [{ 
+const advisors = [
+  { 
   name: "Dr. Sarah Johnson", role: "Strategic Advisor", description: "Strategize the collective ideas in the team", image: "/about/advisory1.png" }, 
   { name: "Michael Chen", role: "Technology Consultant", 
     description: "Strategize the collective ideas in the team",
@@ -40,10 +41,11 @@ const advisors = [{
     image: "/about/advisory1.png" }, 
   { name: "Michael Chen", role: "Technology Consultant", 
     description: "Strategize the collective ideas in the team",
-    image: "/about/advisory2.png" },]
+    image: "/about/advisory2.png" },
+  ]
 
 export default function AdvisoryBoard() {
-  const pageSize = 2
+  const pageSize = 3
   const [currentPage, setCurrentPage] = React.useState(1)
 
   const totalPages = Math.ceil(advisors.length / pageSize)
