@@ -29,7 +29,7 @@ const faqsItems = [
     },
     {
         question: "What is your goal for 2030?",
-        answer: `Our "Vision 2030" is to have trained 1,000 students and successfully helped launch 10 youth-led startups across Nigeria.`
+        answer: `Our "Vision 2030" is to have trained 5,000 students and successfully helped launch 10 youth-led startups across Nigeria.`
     },
 ]
 

@@ -23,7 +23,7 @@ export default function PressSection() {
               Got a media or press-related question?
             </h2>
             <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              For interviews, features, or press information about SEEP Support Centre and our programs, please contact us at <a href="mailto:media@seepupportcentre.org" className="text-[#335CFF] font-semibold underline">media@seepupportcentre.org</a>. For general enquiries or support, kindly use <a href="mailto:info@seepupportcentre.org" className="text-[#335CFF] font-semibold underline">info@seepupportcentre.org</a>.
+              For interviews, features, or press information about SEE-Support Centre and our projects and programs, please contact us at <a href="mailto:media@seepupportcentre.org" className="text-[#335CFF] font-semibold underline">media@seepupportcentre.org</a>. For general enquiries or support, kindly use <a href="mailto:info@seepupportcentre.org" className="text-[#335CFF] font-semibold underline">info@seepupportcentre.org</a>.
             </p>
           </div>
           

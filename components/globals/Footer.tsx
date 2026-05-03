@@ -88,12 +88,12 @@ const socials = [
     title: "Tiktok"
   },
   {
-    link: "",
+    link: "https://www.linkedin.com/company/see-support-centre/",
     icon: FaLinkedinIn,
     title: "LinkedIn"
   },
   {
-    link: "",
+    link: "https://youtube.com/seeSupportCenter",
     icon: FaYoutube,
     title: "Youtube"
   },

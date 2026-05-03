@@ -51,7 +51,7 @@ export default function DonatePage() {
                 We therefore take it upon ourselves to serve as a bridge between young people and the essential resources.
                </p>
                <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                Your donation helps us maintain our robust community through scholarship training, professional mentorship, grant opportunities, and other necessary resources that turns a disadvantaged youth into a self-sufficient global leader and professional.
+                Your donation helps us maintain our robust community through policy building, ideation research, scholarship training, professional mentorship, grant opportunities, stakeholder engagements and other necessary resources that turn a disadvantaged youth into a self-sufficient global leader and professional.
                </p>
             </div>
           </div>
