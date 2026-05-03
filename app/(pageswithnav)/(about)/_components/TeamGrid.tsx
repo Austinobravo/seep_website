@@ -2,10 +2,25 @@ import Image from "next/image"
 
 const members = [
   {
-    name: "John Doe",
-    role: "Core Program Coordinator",
-    image: "/about/team1.png"
-  }
+    name: "Victory Edeke",
+    role: "Project Lead",
+    image: "/victory.png"
+  },
+  {
+    name: "Emmanuel Kingston",
+    role: "Project Lead II",
+    image: "/manuel.png"
+  },
+  {
+    name: "Edikan Francis Otu",
+    role: "Teacher, Writer, Speaker",
+    image: "/edikan.png"
+  },
+  {
+    name: "Saviour Bassey",
+    role: "Logistics Lead",
+    image: "/saviour.png"
+  },
 ]
 
 export default function TeamGrid() {

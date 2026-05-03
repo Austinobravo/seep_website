@@ -148,9 +148,9 @@ const Footer = () => {
           </span>
           <div className='flex gap-5 w-fit'>
             {socials.map((social) => (
-                <Link key={social.title} title={social.title} href={`${social.link}`} target='_blank' className='hover:bg-gray-200 bg-[#FFFFFF12] hover:text-black/80 text-[#CACFD8] rounded-full transition-all duration-500 size-9 flex justify-center items-center'>
-                    <social.icon  size={20}/>
-                </Link>
+                  <Link key={social.title} title={social.title} href={`${social.link}`} target='_blank' className='hover:bg-gray-200 bg-[#FFFFFF12] hover:text-black/80 text-[#CACFD8] rounded-full transition-all duration-500 size-9 flex justify-center items-center'>
+                      <social.icon  size={20}/>
+                  </Link>
               
             ))}
           </div>

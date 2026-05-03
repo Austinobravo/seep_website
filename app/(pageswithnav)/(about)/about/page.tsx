@@ -6,6 +6,7 @@ import AdvisoryBoard from '../_components/AdvisoryBoard'
 import BenefitsImpact from '../_components/BenefitsImpact'
 import TeamGrid from '../_components/TeamGrid'
 import NewsletterBanner from '../_components/NewsletterBanner'
+import Newsletter from '../../(home)/_components/Newsletter'
 
 const AboutPage = () => {
   return (
@@ -13,10 +14,11 @@ const AboutPage = () => {
         <AboutHero />
         <VisionMission />
         <ZigZagFeatures />
-        <BenefitsImpact />
         <AdvisoryBoard />
+        <BenefitsImpact />
         <TeamGrid />
-        <NewsletterBanner />
+        <Newsletter />
+        {/* <NewsletterBanner /> */}
     </main>
   )
 }
