@@ -38,7 +38,7 @@ const DesktopNav = () => {
                         <Link  href={link.href} className='hover:font-bold transition duration-300'>
                             {link.name}
                         </Link>
-                        <span className={`${link.active ? "w-full bg-black" : "w-0 bg-gray-500 group-hover:w-full"} absolute -bottom-1 h-0.5 left-0 transition-all duration-300`}></span>
+                        <span className={`${link.active ? "w-full bg-black" : "w-0 bg-seep-primary group-hover:w-full"} absolute -bottom-1 h-0.5 left-0 transition-all duration-300`}></span>
                         </li>
                     ))}
                 </ul>

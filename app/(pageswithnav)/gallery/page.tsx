@@ -12,7 +12,7 @@ const GalleryPage = () => {
           </p>
           <div className="max-w-3xl">
             <h1 className="font-general-sans text-3xl font-medium tracking-tight text-slate-800 md:text-5xl">
-              Stories from SEEP programs, classrooms, and innovation moments.
+              Stories from SEEP programmes, classrooms, and innovation moments.
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-slate-500 md:text-lg">
               Explore the projects and events shaping our community. Selecting

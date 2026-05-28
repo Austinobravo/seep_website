@@ -78,19 +78,19 @@ const MobileNav = () => {
             : 'opacity-0 pointer-events-none -translate-y-full'
         }`}
       >
-        <ul className="flex flex-col border h-full space-y-4  pt-20">
-          {navLinks.map((navLink, index) => {
+        <ul className="flex flex-col h-full space-y-4  pt-26 pl-10">
+          {[{name: "Home", href:"/", active: pathname === "/"}, ...navLinks].map((navLink, index) => {
             const isActive = pathname === navLink.href
-            const isContact = navLink.name === 'Contact Us'
+            const isDonate = navLink.name === 'Donate'
 
             return (
-              <li key={index} className="w-full text-center">
+              <li key={index} className="w-full">
                 <Link 
                   href={navLink.href} 
                   onClick={() => setIsMenuToggled(false)}
-                  className={`text-2xl transition-all block py-2 ${
-                    isContact 
-                      ? "bg-linear-to-r from-[#0097FF] to-[#CCEAFF] text-white px-8 rounded-full inline-block" 
+                  className={`text-2xl transition-all block py-2 ${ 
+                    isDonate 
+                      ? "bg-[#335CFF] text-white px-8 rounded-full inline-block" 
                       : isActive 
                         ? 'text-[#0097FF] font-bold' 
                         : 'text-neutral-700 font-medium'
