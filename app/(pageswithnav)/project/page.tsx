@@ -4,7 +4,7 @@ import ProjectFilterSection from './_components/ProjectFilterSection'
 import ProjectCTA from './_components/ProjectCTA'
 
 export const metadata = {
-  title: 'Our Projects | SEEP',
+  title: 'Our Projects | SEE SUPPORT CENTRE',
   description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
 }
 

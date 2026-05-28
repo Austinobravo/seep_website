@@ -1,7 +1,7 @@
 import React from "react"
 
 export const metadata = {
-  title: 'Privacy Policy | SEEP',
+  title: 'Privacy Policy | SEE SUPPORT CENTRE',
   description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
 }
 
@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
           </h2>
 
           <p className="mt-6 text-sm sm:text-base leading-7 sm:leading-8 text-neutral-600 max-w-5xl">
-            At [Your Platform/Organization Name], we value your privacy and are
+            At SeeSupportCentre, we value your privacy and are
             committed to protecting your personal information. This Privacy
             Policy explains how we collect, use, and safeguard your data when
             you interact with our platform, services, and programs.

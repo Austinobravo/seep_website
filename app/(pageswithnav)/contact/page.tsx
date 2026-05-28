@@ -4,7 +4,7 @@ import ContactForm from './_components/ContactForm'
 import ContactInfo from './_components/ContactInfo'
 
 export const metadata = {
-  title: 'Contact Us | SEEP',
+  title: 'Contact Us | SEE SUPPORT CENTRE',
   description: "We'd love to hear from you. Whether you have questions, want to collaborate, support our initiatives, or learn more about what we do, feel free to reach out.",
 }
 

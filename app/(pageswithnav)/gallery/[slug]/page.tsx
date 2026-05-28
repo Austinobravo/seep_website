@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: 'Gallery | SEEP',
+  title: 'Gallery | SEE SUPPORT CENTRE',
   description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
 }
 

@@ -3,7 +3,7 @@ import { galleryProjectCards } from '@/lib/gallery-data'
 import PressSection from '../blog/_components/PressSection'
 
 export const metadata = {
-  title: 'Gallery | SEEP',
+  title: 'Gallery | SEE SUPPORT CENTRE',
   description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
 }
 const GalleryPage = () => {

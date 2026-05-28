@@ -6,7 +6,7 @@ import PressSection from './_components/PressSection'
 import PageHero from '@/components/globals/PageHero'
 
 export const metadata = {
-  title: 'Blog | Insights & Updates | SEEP',
+  title: 'Blog | Insights & Updates | SEE SUPPORT CENTRE',
   description: 'Stories, updates, and announcements from SEEP Support Centre — highlighting our programs, impact, and community work.',
 }
 

@@ -5,6 +5,11 @@ import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import ProjectCTA from '../_components/ProjectCTA'
 
+export const metadata = {
+  title: 'Our Projects | SEE SUPPORT CENTRE',
+  description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
+}
+
 export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
   return (
     <main className="min-h-screen bg-white">
