@@ -17,7 +17,7 @@ const useNavigation = () => {
             active: pathname.includes("/gallery")
         },
         {
-            name: "Project",
+            name: "Programme",
             href: "/project",
             active: pathname.startsWith("/project")
         },

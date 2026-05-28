@@ -5,21 +5,21 @@ import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 
-const categories = ["All", "SEEP", "Project 2", "Project 3", "Project 4", "Project 5"]
+const categories = ["All", "SEEP", "Programme 2", "Programme 3", "Programme 4", "Programme 5"]
 
 const projects = [
   { id: 1, category: "SEEP", image: "/first1.jpg", title: "Project A" },
-  { id: 2, category: "Project 2", image: "/first2.jpg", title: "Project B" },
-  { id: 3, category: "Project 3", image: "/first3.jpg", title: "Project C" },
-  { id: 4, category: "Project 4", image: "/second1.jpg", title: "Project D" },
-  { id: 5, category: "Project 5", image: "/second2.jpg", title: "Project E" },
-  { id: 6, category: "SEEP", image: "/second3.jpg", title: "Project F" },
-  { id: 7, category: "Project 2", image: "/third1.jpg", title: "Project G" },
-  { id: 8, category: "Project 3", image: "/third2.jpg", title: "Project H" },
-  { id: 9, category: "Project 4", image: "/third3.jpg", title: "Project I" },
-  { id: 10, category: "Project 5", image: "/research.jpg", title: "Project J" },
-  { id: 11, category: "SEEP", image: "/innovation.jpg", title: "Project K" },
-  { id: 12, category: "Project 2", image: "/science.jpg", title: "Project L" },
+  { id: 2, category: "Programme 2", image: "/first2.jpg", title: "Programme B" },
+  { id: 3, category: "Programme 3", image: "/first3.jpg", title: "Programme C" },
+  { id: 4, category: "Programme 4", image: "/second1.jpg", title: "Programme D" },
+  { id: 5, category: "Programme 5", image: "/second2.jpg", title: "Programme E" },
+  { id: 6, category: "SEEP", image: "/second3.jpg", title: "Programme F" },
+  { id: 7, category: "Programme 2", image: "/third1.jpg", title: "Programme G" },
+  { id: 8, category: "Programme 3", image: "/third2.jpg", title: "Programme H" },
+  { id: 9, category: "Programme 4", image: "/third3.jpg", title: "Programme I" },
+  { id: 10, category: "Programme 5", image: "/research.jpg", title: "Programme J" },
+  { id: 11, category: "SEEP", image: "/innovation.jpg", title: "Programme K" },
+  { id: 12, category: "Programme 2", image: "/science.jpg", title: "Programme L" },
 ]
 
 export default function ProjectFilterSection() {

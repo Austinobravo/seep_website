@@ -49,13 +49,13 @@ export default function ContactInfo() {
         </p>
       </section>
 
-      <section className="space-y-3">
+      {/* <section className="space-y-3">
         <h3 className="text-xl font-bold text-slate-800">Uyo Office</h3>
         <p className="text-slate-500 text-base">Visit our office Mon - Fri, 9:00 AM - 5:00 PM.</p>
         <p className="text-slate-900 font-semibold leading-relaxed max-w-sm underline decoration-slate-300">
           Apostle Umana Building, Uwern Lazarus Road, Osongoma Estate Extension Uyo, Akwa Ibom State.
         </p>
-      </section>
+      </section> */}
     </div>
   )
 }

@@ -12,7 +12,7 @@ const ProjectPage = () => {
   return (
     <main className="min-h-screen bg-slate-50/30">
       <PageHero 
-        title="Our Projects"
+        title="Our Programmes"
         description="Since our launch, SEE-Support Centre has delivered programs and initiatives focused on education, innovation, and human capacity development across communities. Each project is designed to create measurable impact — equipping individuals with skills, rebuilding institutions and supporting long-term social and economic growth."
         backgroundImage="/first1.jpg"
       />

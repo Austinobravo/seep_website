@@ -7,19 +7,19 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
 
-const categories = ["All", "Announcements", "Programs & Impact", "News & Events"]
+const categories = ["All", "Announcements", "Programmes & Impact", "News & Events"]
 
 const blogPosts = [
   { id: 1, category: "Announcements", image: "/first1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 2, category: "Programs & Impact", image: "/first2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+  { id: 2, category: "Programmes & Impact", image: "/first2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 3, category: "Announcements", image: "/first3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 4, category: "News & Events", image: "/second1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 5, category: "Announcements", image: "/second2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 6, category: "News & Events", image: "/second3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 7, category: "Programs & Impact", image: "/third1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+  { id: 7, category: "Programmes & Impact", image: "/third1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 8, category: "News & Events", image: "/third2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 9, category: "Announcements", image: "/third3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 10, category: "Programs & Impact", image: "/research.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+  { id: 10, category: "Programmes & Impact", image: "/research.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 11, category: "News & Events", image: "/innovation.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
   { id: 12, category: "Announcements", image: "/science.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
 ]
