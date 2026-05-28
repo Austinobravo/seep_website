@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button"
 import DonationModal from "./_components/DonationModal"
 import ProjectCTA from "../project/_components/ProjectCTA"
 
+// export const metadata = {
+//   title: 'Donate | SEEP',
+//   description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
+// }
+
 export default function DonatePage() {
   const [isModalOpen, setIsModalOpen] = useState(true) // Open by default for demo
 

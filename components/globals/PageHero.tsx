@@ -42,7 +42,7 @@ export default function PageHero({ title, description, backgroundImage }: PageHe
             <p className="text-slate-600 text-lg md:text-xl leading-relaxed animate-in fade-in slide-in-from-left-8 duration-700 delay-200">
               {description}
             </p>
-            <LinkButton title="Join Us" path="" className="rounded-lg! px-7! py-2!"/>
+            <LinkButton title="Join Us" path="/contact" className="rounded-lg! px-7! py-2!"/>
             
             {/* Scroll indicator - absolute positioned in the bottom center of the card */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex items-center justify-center p-3 bg-white/50 backdrop-blur-sm rounded-full border border-white/20 animate-bounce">

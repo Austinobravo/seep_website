@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function SupportBanner() {
   return (
@@ -8,11 +9,11 @@ export default function SupportBanner() {
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 max-w-3xl mx-auto leading-tight">
           If you believe in empowering young innovators, you can support SEEP' ongoing projects.
         </h2>
-        <div className="pt-4">
-          <Button className="bg-[#335CFF] hover:bg-blue-700 text-white rounded-full px-12 py-7 text-lg font-semibold transition-all duration-300">
+        <Link href="/donate" className="pt-4">
+          <Button className="bg-[#335CFF] cursor-pinter hover:bg-blue-700 text-white rounded-full px-12 py-7 text-lg font-semibold transition-all duration-300">
             Donate
           </Button>
-        </div>
+        </Link>
       </div>
     </section>
   )

@@ -27,12 +27,16 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/contact">
              <Button className="bg-[#335CFF] hover:bg-blue-700 text-white rounded-full px-10 py-7 text-lg font-semibold transition-all duration-300">
                Enroll Your School
              </Button>
+            </Link>
+            <Link href="/contact">
              <Button variant="outline" className="bg-white hover:bg-slate-50 text-slate-900 border-none rounded-full px-10 py-7 text-lg font-semibold transition-all duration-300 shadow-sm">
                Become a Volunteer
              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -115,11 +119,11 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                     This program was made possible through institutional support. Help us expand to more campuses.
                 </h2>
             </div>
-            <div className="pt-4">
+            <Link href={`/donate`} className="pt-4">
                 <Button className="bg-[#335CFF] hover:bg-blue-700 text-white rounded-full px-12 py-7 text-lg font-semibold transition-all duration-300 shadow-xl">
                     Donate
                 </Button>
-            </div>
+            </Link>
         </div>
       </section>
 

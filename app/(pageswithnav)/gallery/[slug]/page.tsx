@@ -14,6 +14,11 @@ export async function generateStaticParams() {
   }))
 }
 
+export const metadata = {
+  title: 'Gallery | SEEP',
+  description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
+}
+
 const ProjectGalleryPage = async ({ params }: ProjectGalleryPageProps) => {
   const { slug } = await params
   const project = getGalleryProjectBySlug(slug)

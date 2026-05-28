@@ -12,8 +12,8 @@ const HomeHero = () => {
             <h1 className="lg:text-4xl text-3xl font-general-sans text-center">Social Entrepreneurial Enhancement <span className='text-neutral-400'>Support Center (SEE-SC)</span></h1>
             <h2 className="text-neutral-600 text-center ">Creating a network of business opportunities and ideas, for a sustainable global economy.</h2>
             <div className='flex gap-x-4 not-lg:flex-col gap-y-4 items-center'>
-                <LinkButton title='Learn more' icon={ArrowRight} path='' className='py-10'/>
-                <Link href={``}>
+                <LinkButton title='Learn more' icon={ArrowRight} path='/contact' className='py-10'/>
+                <Link href={`/donate`}>
                     <Button className="bg-[#476CFF1A] text-seep-primary py-6! w-40 hover:scale-105 transition-all duration-700 cursor-pointer rounded-full hover:bg-[#476CFF1A]/80">Donate</Button>
                 </Link>
             </div>

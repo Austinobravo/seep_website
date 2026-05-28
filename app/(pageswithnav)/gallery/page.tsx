@@ -2,6 +2,10 @@ import ProjectCardGrid from '@/components/gallery/ProjectCardGrid'
 import { galleryProjectCards } from '@/lib/gallery-data'
 import PressSection from '../blog/_components/PressSection'
 
+export const metadata = {
+  title: 'Gallery | SEEP',
+  description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
+}
 const GalleryPage = () => {
   return (
     <section className="px-5 pb-20 md:px-8 lg:px-10">

@@ -27,10 +27,10 @@ const footerLinks: FooterSection[] = [
       },
       {
         link: "/project",
-        title: "Projects"
+        title: "Programmes"
       },
       {
-        link: "/news-and-events",
+        link: "/blog",
         title: "News and events"
       },
     ]
@@ -39,7 +39,7 @@ const footerLinks: FooterSection[] = [
     title: "Testimonials",
     children: [
       {
-        link: "/join-us",
+        link: "/contact",
         title: "Join Us"
       },
       {
@@ -56,7 +56,7 @@ const footerLinks: FooterSection[] = [
     title: "Information",
     children: [
       {
-        link: "/faqs",
+        link: "/#faqs",
         title: "Faqs"
       },
       {

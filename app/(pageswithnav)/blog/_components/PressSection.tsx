@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function PressSection() {
   return (
@@ -27,11 +28,11 @@ export default function PressSection() {
             </p>
           </div>
           
-          <div className="pt-4">
+          <Link href="/contact" className="pt-4">
             <Button className="bg-[#335CFF] hover:bg-blue-700 text-white rounded-full px-12 py-7 text-lg font-semibold transition-all duration-300 shadow-lg">
               Contact Media Team
             </Button>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

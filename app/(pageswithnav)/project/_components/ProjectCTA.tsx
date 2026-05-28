@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function ProjectCTA() {
   return (
@@ -28,10 +29,11 @@ export default function ProjectCTA() {
                   We collaborate with partners, institution, and innovators to design and deliver high-impact programs, infrastructure, and initiatives. If your project aligns with our mission, let's explore how we can build it together.
                 </p>
               </div>
-              
-              <button className="w-full py-5 bg-white text-[#1a2b6d] font-bold rounded-2xl hover:bg-slate-100 transition-all duration-300 transform hover:scale-[1.02] shadow-xl">
-                Propose a Project
-              </button>
+              <Link href={`/contact`}>
+                <button className="w-full cursor-pointer py-5 bg-white text-[#1a2b6d] font-bold rounded-2xl hover:bg-slate-100 transition-all duration-300 transform hover:scale-[1.02] shadow-xl">
+                  Propose a Project
+                </button>
+              </Link>
             </div>
           </div>
         </div>
