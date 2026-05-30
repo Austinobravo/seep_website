@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import Image from 'next/image'
+import Image from 'next/image'       
 
 const drivers = [
     {
@@ -25,14 +25,14 @@ const drivers = [
     },
     {
         title: "Science",
-        paragraph: "We leverage science and technology to enhance learning, expand access, and improve program delivery. Digital tools and data systems enable greater efficiency, transparency, and impact measurement. By integrating technology responsibly, we prepare communities for a rapidly advancing world.",
+        paragraph: `Our science initiative focuses on bridging the gap between theoretical concepts and real-world application, particularly through the lens of applied  STEM innovation. We aim at providing young people with a holistic educational experience that emphasises the "preparation of the body, mind and spirit." This approach ensures that scientific learning is not just about memorisation, but about understanding the ethical and innovative power of science to transform vulnerable communities into resilient, self-sustaining ones.`,
         image: "/science.jpg"
     },
     {
         title: "Technology",
-        paragraph: "We leverage science and technology to enhance learning, expand access, and improve program delivery. Digital tools and data systems enable greater efficiency, transparency, and impact measurement. By integrating technology responsibly, we prepare communities for a rapidly advancing world.",
+        paragraph: "Our projects and programmes are designed to leverage cutting-edge technological advancements in transitioning youths from being passive consumers to becoming active creators within the global economy. We provide intensive, scholarship-based training in high-demand fields. Supported by technical partners, we equip young people with the requisite skills necessary to onboard effectively into the modern workforce.",
         image: "/technology.jpg"
-    },
+    }, 
 ]
 const MobileCoreDrivers = () => {
     return (

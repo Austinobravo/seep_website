@@ -126,7 +126,7 @@ export default function ChangingLivesSection() {
         </div>
 
         {/* RIGHT SIDE PANEL */}
-        <div className="w-1/4 md:w-100 flex items-center z-20">
+        <div className="w-1/4 md:w-100 not-sm:hidden flex items-center z-20">
           <h2 className=" md:text-4xl font-medium break-words leading-tight text-blue-600">
             Changing lives,
             <br />
@@ -139,7 +139,7 @@ export default function ChangingLivesSection() {
             </span>
           </h2>
         </div>
-        <div className="pointer-events-none inset-y-0 absolute right-1/4 md:right-[400px] top-0 h-full w-13 bg-linear-to-l from-[#E8ECF41A] via-[#EEF2F673] to-[#F4F6F9] z-10" />
+        <div className="pointer-events-none not-sm:hidden inset-y-0 absolute right-1/4 md:right-[400px] top-0 h-full w-13 bg-linear-to-l from-[#E8ECF41A] via-[#EEF2F673] to-[#F4F6F9] z-10" />
 
 
                     {/* <div className="absolute inset-y-0 left-0 w-20 bg-linear-to-r from-[aparte-gray] to-transparent z-20 pointer-events-none" /> */}
