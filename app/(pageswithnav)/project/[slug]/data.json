@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "slug": "seep-tech-2-school",
+    "title": "SEEP-Tech-2-School",
+    "shortDescription": "We collaborate with secondary schools to introduce students to the tech industry and other emerging industries while providing mentorships, a community of like-minded people, and relevant resources to become self-sufficient and relevant in the industry. We aim to develop tech skills in young people and provide them with entrepreneurial opportunities, empowering them to solve social problems through innovation for the global and Nigerian economies.",
+
+    "program": "SEEP-Tech-2-School",
+    "institution": "Secondary School Name",
+    "date": "12—14 March, 2025",
+
+    "whatWeDid": "Tech introduction sessions, mentorship talks, hands-on learning, and community building.",
+
+    "goal": "To equip young students with foundational tech skills, mentorship, and entrepreneurial awareness to become future-ready problem solvers.",
+
+    "content": [
+      {
+        "type": "paragraph",
+        "value": "SEEP-Tech-2-School is a grassroots initiative designed to introduce secondary school students to technology and emerging industries at an early stage. The program focuses on building awareness, confidence, and foundational skills that prepare young minds for future opportunities in the digital economy."
+      },
+      {
+        "type": "paragraph",
+        "value": "Through interactive sessions, mentorship, and access to relevant learning resources, we expose students to real-world applications of technology while fostering a strong sense of purpose, creativity, and problem-solving."
+      },
+      {
+        "type": "image",
+        "value": "/tech2school1.png",
+        "alt": "Mentorship Session"
+      },
+      {
+        "type": "paragraph",
+        "value": "Beyond technical exposure, the program builds a supportive community of like-minded students and mentors, encouraging collaboration and curiosity."
+      },
+      {
+        "type": "image",
+        "value": "/tech2school2.png",
+        "alt": "Students Learning"
+      },
+      {
+        "type": "paragraph",
+        "value": "SEEP-Tech-2-School is part of our long-term commitment to developing Africa's next generation of innovators."
+      }
+    ],
+
+    "gallery": [
+      "/tech2school1.png",
+      "/tech2school2.png",
+      "/tech2school3.png"
+    ],
+
+    "cta": {
+      "title": "This program was made possible through institutional support. Help us expand to more campuses.",
+      "buttonText": "Donate",
+      "buttonLink": "/donate"
+    },
+
+    "actions": [
+      {
+        "label": "Enroll Your School",
+        "href": "/contact"
+      },
+      {
+        "label": "Become a Volunteer",
+        "href": "/contact"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "seep-innov8ion",
+    "title": "SEEP-Innov8ion",
+    "shortDescription": "The SEEP-Innov8ion program is designed to run in tertiary institutions to support the innovative and creative ideas of student entrepreneurs. The program is committed to facilitating the birth and the nurture of innovative ideas in Nigerian tertiary institutions, making a profound impact on the global and Nigerian economy.",
+
+    "program": "SEEP-Innov8ion",
+    "institution": "Federal University of Technology, Owerri (FUTO)",
+    "date": "12—14 March, 2025",
+
+    "whatWeDid": "Innovation workshops, idea validation sessions, and mentorship for student-led projects.",
+
+    "goal": "To identify high-potential student ideas and equip young innovators with the tools, mindset, and guidance needed to build sustainable, real-world solutions.",
+
+    "content": [
+      {
+        "type": "paragraph",
+        "value": "SEEP Innov8ion is a structured innovation program embedded within tertiary institutions to identify, support, and scale high-potential student-led ideas. We focus on turning raw creativity into viable, impact-driven solutions that address real economic and social challenges."
+      },
+      {
+        "type": "image",
+        "value": "/innov8ion1.png",
+        "alt": "Mentorship Session"
+      },
+      {
+        "type": "paragraph",
+        "value": "The program provides student entrepreneurs with early-stage mentorship, exposure to research-driven thinking, and practical guidance in science, technology, and innovation. Rather than celebrating ideas alone, SEEP Innov8ion emphasises execution, ethical leadership, and sustainability."
+      },
+      {
+        "type": "image",
+        "value": "/innov8ion2.png",
+        "alt": "Students Learning"
+      },
+      {
+        "type": "paragraph",
+        "value": "By creating a direct bridge between tertiary institutions and real-world economic needs, SEEP Innov8ion nurtures ideas from concept to market relevance—positioning Nigerian students as future founders, innovators, and problem-solvers with global impact."
+      }
+    ],
+
+    "gallery": [
+      "/innov8ion1.png",
+      "/innov8ion2.png",
+      "/innov8ion3.png"
+    ],
+
+    "cta": {
+      "title": "Bring SEEP-Innov8ion to your institution",
+      "buttonText": "Host Programme",
+      "buttonLink": "/contact"
+    },
+
+    "actions": [
+      {
+        "label": "Participate",
+        "href": "/contact"
+      },
+      {
+        "label": "Become a Mentor",
+        "href": "/contact"
+      }
+    ]
+  }
+]

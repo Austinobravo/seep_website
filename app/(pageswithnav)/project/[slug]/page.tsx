@@ -4,13 +4,93 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import ProjectCTA from '../_components/ProjectCTA'
+import projects from "./data.json"
+import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
 
-export const metadata = {
-  title: 'Our Projects | SEE SUPPORT CENTRE',
-  description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
+// export const metadata = {
+//   title: 'Our Projects | SEE SUPPORT CENTRE',
+//   description: 'Explore the impactful projects and initiatives led by SEEP Support Centre across Africa.',
+// }
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
 }
 
-export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+
+     const { slug } = await params; 
+
+    const post = projects.find(
+        (project) => project.slug === slug
+      );;
+    const displayTitle = post?.title || slug || "Project Details";
+    // const slug = post?.slug || slug || "Project Details"
+
+    return {
+     title: `${displayTitle.toLocaleUpperCase()} | SEE SUPPORT CENTRE`,
+      description: post ? (post.shortDescription) : `Read more about this insightful post on SEE SUPPORT CENTER.`,
+      keywords: ["Rent", "Booking", "SEE", "AirBnB", "Apartments", "Houses", "Hotels"],
+      openGraph: {
+        title: displayTitle,
+        description: `Read more about ${displayTitle} insightful post on SEE SUPPORT CENTRE.`,
+        // images: [{ url: `${BASE_URL}/blacklogo.png` }],
+        // url: `${BASE_URL}/${slug}`,
+        type: "website"
+      },
+      twitter:{
+        card: "summary_large_image",
+        title: `${displayTitle} | SEE SUPPORT CENTRE`,
+        description: "We believe in booking the right apartments",
+        // images: [`${BASE_URL}/blacklogo.png`],
+      },
+      other: {
+        "application/ld+json": JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "headline": `${displayTitle} | SEE SUPPORT CENTRE`,
+          "description": "We believe in booking the right apartments",
+          "author": {
+            "@type": "Person",
+            "name": "SEE SUPPORT CENTRE",
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "SEE SUPPORT CENTRE",
+            "logo": {
+              "@type": "ImageObject",
+              // "url": `${BASE_URL}/blacklogo.png`,
+            },
+          },
+          // "image": `${BASE_URL}/blacklogo.png`,
+          // "url": `${BASE_URL}/${slug}`,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            // "@id": BASE_URL
+          }
+        })
+      }
+    };
+  }
+
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }))
+}
+
+export default async  function ProjectDetailPage({ params }: PageProps) {
+   const { slug } = await params
+    const project = projects.find(
+        (project) => project.slug === slug
+      );
+
+
+  
+    if (!project) {
+      notFound()
+    }
   return (
     <main className="min-h-screen bg-white">
       {/* Header Section */}
@@ -24,24 +104,27 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           </Link>
           
           <h1 className="text-4xl md:text-7xl font-bold text-slate-900 mb-8 tracking-tight">
-            SEEP-Tech-2-School
+            {project.title}
           </h1>
           
           <p className="max-w-3xl mx-auto text-slate-600 text-lg md:text-xl leading-relaxed mb-12">
-            We collaborate with secondary schools to introduce students to the tech industry and other emerging industries while providing mentorship, a community of like-minded researchers to become self-sufficient and relevant in the industry. We aim to develop tech skills in young people and provide them with entrepreneurial opportunities, empowering them to solve social problems through innovation for the global and Nigerian economies.
+            {project.shortDescription}
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact">
-             <Button className="bg-[#335CFF] hover:bg-blue-700 text-white rounded-full px-10 py-7 text-lg font-semibold transition-all duration-300">
-               Enroll Your School
+            {project.actions.map((action) => (
+            <Link key={action.label} href={action.href}>
+             <Button className={`${action.label === "Enroll Your School" ? "bg-[#335CFF] hover:bg-blue-700 text-white" : "bg-white hover:bg-slate-50 text-slate-900 border-none"} rounded-full px-10 py-7 text-lg font-semibold transition-all duration-300`}>
+               {action.label}
              </Button>
             </Link>
-            <Link href="/contact">
+
+            ))}
+            {/* <Link href="/contact">
              <Button variant="outline" className="bg-white hover:bg-slate-50 text-slate-900 border-none rounded-full px-10 py-7 text-lg font-semibold transition-all duration-300 shadow-sm">
                Become a Volunteer
              </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -55,30 +138,30 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-10">
                 <div className="space-y-2">
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Program</h4>
-                  <p className="text-lg font-bold text-slate-800">SEEP-Tech-2-School</p>
+                  <p className="text-lg font-bold text-slate-800">{project.program}</p>
                 </div>
                 
                 <div className="space-y-2">
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Institution</h4>
-                  <p className="text-lg font-bold text-slate-800">Secondary School Name</p>
+                  <p className="text-lg font-bold text-slate-800">{project.institution}</p>
                 </div>
                 
                 <div className="space-y-2">
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Date</h4>
-                  <p className="text-lg font-bold text-slate-800">12—14 March, 2025</p>
+                  <p className="text-lg font-bold text-slate-800">{project.date}</p>
                 </div>
                 
                 <div className="space-y-2">
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">What We Did</h4>
                   <p className="text-slate-600 leading-relaxed">
-                    Tech introduction sessions, mentorship talks, hands-on learning, and community building.
+                    {project.whatWeDid}
                   </p>
                 </div>
                 
                 <div className="space-y-2">
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Goal</h4>
                   <p className="text-slate-600 leading-relaxed">
-                    To equip young students with foundational tech skills, mentorship, and entrepreneurial awareness to become future-ready problem solvers.
+                    {project.goal}
                   </p>
                 </div>
               </div>
@@ -87,7 +170,33 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
             {/* Content Body */}
             <div className="lg:w-2/3 space-y-16">
               <div className="space-y-8">
-                <p className="text-slate-600 text-lg leading-relaxed">
+                {project.content.map((item, index) => {
+                if (item.type === "paragraph") {
+                  return (
+                    <p
+                      key={index}
+                      className="text-slate-600 text-lg leading-relaxed"
+                    >
+                      {item.value}
+                    </p>
+                  );
+                }
+
+                return (
+                  <div
+                    key={index}
+                    className="relative w-full h-[450px] rounded-[3rem] overflow-hidden"
+                  >
+                    <Image
+                      src={item.value}
+                      alt={item.alt || project.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                );
+              })}
+                {/* <p className="text-slate-600 text-lg leading-relaxed">
                   SEEP-Tech-2-School is a grassroots initiative designed to introduce secondary school students to technology and emerging industries at an early stage. The program focuses on building awareness, confidence, and foundational skills that prepare young minds for future opportunities in the digital economy.
                 </p>
                 <p className="text-slate-600 text-lg leading-relaxed">
@@ -108,7 +217,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
                 <p className="text-slate-600 text-lg leading-relaxed pt-8 font-medium">
                   SEEP-Tech-2-School is part of our long-term commitment to developing Africa's next generation of innovators, ensuring young people are equipped to contribute meaningfully to both the Nigerian and global economy.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -121,12 +230,12 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
             <div className="space-y-4">
                 <p className="text-slate-500 uppercase tracking-widest text-xs font-bold">Power the next program</p>
                 <h2 className="text-3xl md:text-5xl font-bold text-slate-900 max-w-4xl mx-auto leading-tight">
-                    This program was made possible through institutional support. Help us expand to more campuses.
+                     {project.cta.title}
                 </h2>
             </div>
-            <Link href={`/donate`} className="pt-4">
+            <Link href={project.cta.buttonLink} className="pt-4">
                 <Button className="bg-[#335CFF] hover:bg-blue-700 text-white rounded-full px-12 py-7 text-lg font-semibold transition-all duration-300 shadow-xl">
-                    Donate
+                    {project.cta.buttonText}
                 </Button>
             </Link>
         </div>
@@ -136,3 +245,4 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
     </main>
   )
 }
+
