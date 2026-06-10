@@ -9,7 +9,7 @@
 
     "updatedAt": "February 2026",
 
-    "heroImage": "/blogs/blockchain-hero.jpg",
+    "heroImage": "/blockchain.webp",
 
     "excerpt":
       "How SEEP expanded from digital literacy into enterprise blockchain development and Web3 innovation.",
@@ -31,7 +31,7 @@
           },
           {
             "type": "image",
-            "src": "/blogs/blockchain-training.jpg",
+            "src": "/blockchain-training.webp",
             "alt": "Blockchain Training"
           }
         ]
@@ -72,7 +72,7 @@
 
           {
             "type": "image",
-            "src": "/blogs/web3-africa.jpg",
+            "src": "/web3.webp",
             "alt": "Web3 Africa"
           }
         ]

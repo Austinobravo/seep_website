@@ -56,9 +56,9 @@ const BlogDetailContent = ({ sections, blog }: BlogDetailContentProps) => {
       <section className="pt-12 pb-6">
         <div className="container mx-auto px-4 md:px-6">
           <nav className="flex items-center gap-2 text-sm text-slate-500 mb-8">
-            <Link href="/project" className="hover:text-slate-900 transition-colors">Blog</Link>
+            <Link href="/blog" className="hover:text-slate-900 transition-colors">Blog</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link href="/blog?category=Programs & Impact" className="hover:text-slate-900 transition-colors">{blog.category}</Link>
+            <Link href="/blog?category=Programmes & Impact" className="hover:text-slate-900 transition-colors">{blog.category}</Link>
           </nav>
           
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 max-w-4xl leading-tight mb-6">
