@@ -1,0 +1,234 @@
+[
+  {
+    "slug": "upskilling-for-the-future-of-african-enterprise",
+
+    "title":
+      "Upskilling for the Future of African Enterprise",
+
+    "category": "Technology",
+
+    "updatedAt": "February 2026",
+
+    "heroImage": "/blogs/blockchain-hero.jpg",
+
+    "excerpt":
+      "How SEEP expanded from digital literacy into enterprise blockchain development and Web3 innovation.",
+
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "Innovation never stands still. When we launched SEEP 2.0: Tech-2-School, our goal was to bridge the digital divide by introducing students to foundational technology pathways."
+          },
+          {
+            "type": "paragraph",
+            "text":
+              "However, we quickly realized that preparing Africa's future workforce meant mastering the infrastructure of tomorrow."
+          },
+          {
+            "type": "image",
+            "src": "/blogs/blockchain-training.jpg",
+            "alt": "Blockchain Training"
+          }
+        ]
+      },
+
+      {
+        "id": "building",
+        "title": "What We've Been Building",
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "Through the NITDA Blockchain Scholarship Program, participants were trained in enterprise-grade Web3 infrastructure."
+          },
+
+          {
+            "type": "numbered-list",
+            "items": [
+              "Node Systems and distributed ledger architecture.",
+              "Immutability and double-spending prevention.",
+              "Identity Management and scripting for smart contracts."
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "solutions",
+        "title": "Solving Real Nigerian Problems with Web3",
+        "content": [
+          {
+            "type": "numbered-list",
+            "items": [
+              "Blockchain-powered micro-payment platform for market traders affected by cashless policy challenges.",
+              "Decentralized e-voting platform for secure and transparent elections."
+            ]
+          },
+
+          {
+            "type": "image",
+            "src": "/blogs/web3-africa.jpg",
+            "alt": "Web3 Africa"
+          }
+        ]
+      },
+
+      {
+        "id": "impact",
+        "title": "What This Means for SEE Support Centre",
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "We are expanding beyond digital literacy into building future-ready developers capable of solving Africa's toughest challenges."
+          },
+
+          {
+            "type": "paragraph",
+            "text":
+              "The future is decentralized, secure, and locally grown."
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "slug": "tech-2-school-the-genesis-of-seep-2-0-and-the-journey-to-empower-the-next-generation",
+
+    "title":
+      "Tech-2-School: The Genesis of SEEP 2.0 and the Journey to Empower the Next Generation",
+
+    "category": "Programs & Impact",
+
+    "updatedAt": "July 2022",
+
+    "heroImage": "/first1.jpg",
+
+    "excerpt":
+      "The story behind SEEP 2.0 and how the movement began in public secondary schools.",
+
+    "sections": [
+      {
+        "id": "vision",
+        "title": "The Vision",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "Back in 2019, while still an undergraduate, the vision for the Student Entrepreneurial Empowerment Program was born."
+          },
+
+          {
+            "type": "paragraph",
+            "text":
+              "By July 2022, that vision evolved into SEEP 2.0: Tech-2-School."
+          },
+
+          {
+            "type": "image",
+            "src": "/tech2school1.jpg",
+            "alt": "Tech2School"
+          }
+        ]
+      },
+
+      {
+        "id": "pipeline",
+        "title": "The Growth Pipeline",
+
+        "content": [
+          {
+            "type": "numbered-list",
+            "items": [
+              "Tech-101 Deployment with The Roothub Uyo.",
+              "8-week intensive bootcamp.",
+              "Product incubation and gifting."
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "day1",
+        "title": "Day One",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "At AdiahaObong Secondary Commercial School, students participated in sessions on Digital Marketing and Google Search."
+          },
+
+          {
+            "type": "image",
+            "src": "/first3.jpg",
+            "alt": "Day One Activities"
+          }
+        ]
+      },
+
+      {
+        "id": "day2",
+        "title": "Day Two",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "Government Technical College students were introduced to design principles and many touched a computer for the first time."
+          },
+          {
+            "type": "image",
+            "src": "/first2.jpg",
+            "alt": "Day Two Activities"
+          }
+        ]
+      },
+
+      {
+        "id": "day3",
+        "title": "Day Three",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "Students explored Design Thinking, Digital Marketing, Photography, and Content Development."
+          },
+
+          {
+            "type": "image",
+            "src": "/second1.jpg",
+            "alt": "Final Day"
+          }
+        ]
+      },
+
+      {
+        "id": "phase2",
+        "title": "Moving to Phase Two",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text":
+              "22 students advanced into an intensive 8-week bootcamp through volunteer and partner support."
+          },
+
+          {
+            "type": "paragraph",
+            "text":
+              "The seeds have been sown. Now watch us cultivate the future."
+          }
+        ]
+      }
+    ]
+  }
+]

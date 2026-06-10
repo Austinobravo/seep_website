@@ -112,9 +112,9 @@ export default async  function ProjectDetailPage({ params }: PageProps) {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            {project.actions.map((action) => (
+            {project.actions.map((action, index) => (
             <Link key={action.label} href={action.href}>
-             <Button className={`${action.label === "Enroll Your School" ? "bg-[#335CFF] hover:bg-blue-700 text-white" : "bg-white hover:bg-slate-50 text-slate-900 border-none"} rounded-full px-10 py-7 text-lg font-semibold transition-all duration-300`}>
+             <Button className={`${index === 0 ? "bg-[#335CFF] hover:bg-blue-700 text-white" : "bg-white hover:bg-slate-50 text-slate-900 border-none"} rounded-full px-10 py-7 text-lg font-semibold transition-all duration-300`}>
                {action.label}
              </Button>
             </Link>

@@ -7,21 +7,26 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
 
-const categories = ["All", "Announcements", "Programmes & Impact", "News & Events"]
+// const categories = ["All", "Announcements", "Programmes & Impact", "News & Events"]
+const categories = ["All", "Programmes & Impact"]
 
+// const blogPosts = [
+//   { id: 1, category: "Announcements", image: "/first1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 2, category: "Programmes & Impact", image: "/first2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 3, category: "Announcements", image: "/first3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 4, category: "News & Events", image: "/second1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 5, category: "Announcements", image: "/second2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 6, category: "News & Events", image: "/second3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 7, category: "Programmes & Impact", image: "/third1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 8, category: "News & Events", image: "/third2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 9, category: "Announcements", image: "/third3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 10, category: "Programmes & Impact", image: "/research.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 11, category: "News & Events", image: "/innovation.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+//   { id: 12, category: "Announcements", image: "/science.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+// ]
 const blogPosts = [
-  { id: 1, category: "Announcements", image: "/first1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 2, category: "Programmes & Impact", image: "/first2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 3, category: "Announcements", image: "/first3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 4, category: "News & Events", image: "/second1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 5, category: "Announcements", image: "/second2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 6, category: "News & Events", image: "/second3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 7, category: "Programmes & Impact", image: "/third1.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 8, category: "News & Events", image: "/third2.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 9, category: "Announcements", image: "/third3.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 10, category: "Programmes & Impact", image: "/research.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 11, category: "News & Events", image: "/innovation.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
-  { id: 12, category: "Announcements", image: "/science.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
+  { id: 1, category: "Programmes & Impact", image: "/first2.jpg", title: "Upskilling for the Future of African Enterprise", excerpt: "How SEEP expanded from digital literacy into enterprise blockchain development and Web3 innovation.", slug: "upskilling-for-the-future-of-african-enterprise" },
+  { id: 2, category: "Programmes & Impact", image: "/third1.jpg", title: "Tech-2-School: The Genesis of SEEP 2.0 and the Journey to Empower the Next Generation", excerpt: "The story behind SEEP 2.0 and how the movement began in public secondary schools.", slug: "tech-2-school-the-genesis-of-seep-2-0-and-the-journey-to-empower-the-next-generation" },
 ]
 
 export default function BlogFilterSection() {
@@ -91,7 +96,7 @@ export default function BlogFilterSection() {
                 transition={{ duration: 0.4 }}
                 className="group flex flex-col"
               >
-                <Link href={`/blog/${post.id}`} className="block">
+                <Link href={`/blog/${post.slug}`} className="block">
                   <div className="relative h-64 rounded-2xl overflow-hidden mb-6">
                     <Image
                       src={post.image}

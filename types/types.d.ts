@@ -32,3 +32,37 @@ interface ProjectType {
     buttonLink: string;
   };
 }
+
+interface BlogSectionType {
+  id: string;
+  title: string;
+  content: Array<
+    | {
+        type: "paragraph";
+        text: string;
+      }
+    | {
+        type: "list";
+        items: string[];
+      }
+    | {
+        type: "numbered-list";
+        items: string[];
+      }
+    | {
+        type: "image";
+        src: string;
+        alt: string;
+      }
+  >;
+}
+
+interface BlogPostType {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  updatedAt: string;
+  heroImage: string;
+  sections: BlogSectionType[];
+}
