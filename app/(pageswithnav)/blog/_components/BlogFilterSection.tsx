@@ -25,7 +25,7 @@ const categories = ["All", "Technology", "Programmes & Impact"]
 //   { id: 12, category: "Announcements", image: "/science.jpg", title: "SEEP 2025 Program Cycle Announced", excerpt: "SEEP Support Centre is set to kick off the 2025 SEEP program, expanding access to education, innovation, and skills development across schools and communities." },
 // ]
 const blogPosts = [
-  { id: 1, category: "Technology", image: "/first2.jpg", title: "Upskilling for the Future of African Enterprise", excerpt: "How SEEP expanded from digital literacy into enterprise blockchain development and Web3 innovation.", slug: "upskilling-for-the-future-of-african-enterprise" },
+  { id: 1, category: "Technology", image: "/blockchain.webp", title: "Upskilling for the Future of African Enterprise", excerpt: "How SEEP expanded from digital literacy into enterprise blockchain development and Web3 innovation.", slug: "upskilling-for-the-future-of-african-enterprise" },
   { id: 2, category: "Programmes & Impact", image: "/third1.jpg", title: "Tech-2-School: The Genesis of SEEP 2.0 and the Journey to Empower the Next Generation", excerpt: "The story behind SEEP 2.0 and how the movement began in public secondary schools.", slug: "tech-2-school-the-genesis-of-seep-2-0-and-the-journey-to-empower-the-next-generation" },
 ]
 
