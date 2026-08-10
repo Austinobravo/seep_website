@@ -36,10 +36,10 @@ const ProjectCardGrid = ({
 
   return (
     <div>
-      <div className="grid auto-rows-[180px] grid-cols-1 gap-4 md:grid-cols-3 md:auto-rows-[170px] xl:auto-rows-[210px]">
+      <div className="grid auto-rows-[180px] grid-cols-1 gap-4 md:grid-cols-3 md:auto-rows-[170px] xl:auto-rows-[210px] py-10">
         {visibleCards.map((card, index) => (
           <Link
-            key={card.id}
+            key={`card.id-${index}`}
             href={`/gallery/${card.slug}`}
             className={cn(
               'group relative overflow-hidden rounded-[28px] bg-slate-200 shadow-[0_12px_30px_rgba(15,23,42,0.12)]',
@@ -47,8 +47,8 @@ const ProjectCardGrid = ({
             )}
           >
             <Image
-              src={card.image.src}
-              alt={card.image.alt}
+              src={card.images?.[0]?.src}
+              alt={card.images?.[0]?.alt}
               fill
               className="object-cover transition duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"

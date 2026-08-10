@@ -1,5 +1,5 @@
 import ProjectCardGrid from '@/components/gallery/ProjectCardGrid'
-import { galleryProjectCards } from '@/lib/gallery-data'
+import { galleryProjects } from '@/lib/gallery-data'
 import PressSection from '../blog/_components/PressSection'
 
 export const metadata = {
@@ -26,7 +26,7 @@ const GalleryPage = () => {
           </div>
         </div>
 
-        <ProjectCardGrid cards={galleryProjectCards} />
+        <ProjectCardGrid cards={galleryProjects} />
         <PressSection />
       </div>
     </section>
